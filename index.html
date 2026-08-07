@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymSober | Fitness Promotion Network</title>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="GymSober Logo" class="main-logo">
+            <span class="logo-text">GymSober</span>
+        </div>
+        <div class="hamburger-menu-toggle" id="menuToggleBtn" onclick="toggleMobileMenu()">
+            <div class="bar-line"></div>
+            <div class="bar-line"></div>
+            <div class="bar-line"></div>
+        </div>
+        <nav id="main-navigation-menu">
+            <ul>
+                <li><a href="#page1" onclick="toggleMobileMenu()">Home</a></li>
+                <li><a href="#page2" onclick="toggleMobileMenu()">Testimonials</a></li>
+                <li><a href="#page3" onclick="toggleMobileMenu()">Success</a></li>
+                <li><a href="#page4" onclick="toggleMobileMenu()">Community</a></li>
+                <li><a href="#" onclick="openModal('termsModal')">Terms & Conditions</a></li>
+                <li><a href="#" onclick="openModal('privacyModal')">Privacy Policy</a></li>
+                <li><a href="#" onclick="openModal('refundModal')">Refund Policy</a></li>
+                <li><a href="#" onclick="openModal('contactModal')">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="page1" class="full-page hero-section">
+        <div class="hero-content">
+            <h1>Welcome to GymSober Family</h1>
+            <p class="hero-text">
+                At gymsober, we’re dedicated to helping fitspiration and health conscious peoples get the recognition they deserve. Our mission is to connect your work with the right audience through professional, reliable, and impactful promotion. We focus on growing your fitness journey and building a genuine community of engaged followers. Join us today and see how gymsober can help your profile reach the world.
+            </p>
+            <button class="apply-feature-main-btn" onclick="openModal('applyModal')">
+                APPLY FOR FEATURE
+            </button>
+        </div>
+        <div class="screenshot-container">
+            <div class="ss-flex">
+                <img src="sober-ss.png" alt="GymSober Page Insights" class="dual-screenshot">
+                <img src="salute-ss.png" alt="GymSalute Page Insights" class="dual-screenshot">
+            </div>
+            <p class="parent-tag">@gymsalute is our parent page</p>
+        </div>
+    </section>
+
+    <section id="page2" class="full-page testimonial-section">
+        <h2>Testimonials</h2>
+        <p class="section-subtext">Hear from the fitness creators who scaled with us</p>
+        <div class="video-grid">
+            <div class="video-card"><video src="video1.mp4" controls preload="metadata"></video></div>
+            <div class="video-card"><video src="video2.mp4" controls preload="metadata"></video></div>
+            <div class="video-card"><video src="video3.mp4" controls preload="metadata"></video></div>
+            <div class="video-card"><video src="video4.mp4" controls preload="metadata"></video></div>
+            <div class="video-card"><video src="video5.mp4" controls preload="metadata"></video></div>
+            <div class="video-card"><video src="video6.mp4" controls preload="metadata"></video></div>
+        </div>
+    </section>
+
+    <section id="page3" class="full-page quote-section">
+        <div class="quote-container" style="display: flex; flex-direction: column; gap: 30px; padding: 20px;">
+            <h3 style="font-size: 24px; color: #ff9900; font-weight: bold; margin: 0; line-height: 1.4; text-align: center;">
+                We’ve been in this business since 2015, and we’ve promoted over 2,900 people across our pages.
+            </h3>
+            <p style="font-size: 18px; color: #ffffff; line-height: 1.6; margin: 0; max-width: 650px; align-self: center; text-align: center;">
+                We always believe in building long-term relationships with our clients, so they keep coming back. I’m confident that once you see the results, you’ll likely work with us again.
+            </p>
+            <div style="text-align: center; margin-top: 20px;">
+                <div style="display: flex; align-items: stretch; justify-content: center; gap: 15px; max-width: 600px; margin: 0 auto;">
+                    <div style="width: 4px; background: #ff9900; flex-shrink: 0;"></div>
+                    <p style="font-size: 20px; color: #ffffff; font-style: italic; line-height: 1.5; margin: 0; padding: 10px 0;">
+                        "Turn your fitness content into success with our promotion."
+                    </p>
+                    <div style="width: 4px; background: #ff9900; flex-shrink: 0;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page4" class="full-page stats-section">
+        <div class="stats-content">
+            <div class="insta-logo-box"><i class="fab fa-instagram"></i></div>
+            <div class="counter-number">2.5M</div>
+            <h3>Followers on Instagram</h3>
+            <div class="divider"></div>
+            <a href="https://instagram.com" target="_blank" class="instagram-dm-btn">LET'S GROW TOGETHER</a>
+            <p class="footer-note" style="margin-top: 20px;">We love to promote fitness content</p>
+        </div>
+    </section>
+    <!-- 1. Apply For Feature Popup -->
+    <div id="applyModal" class="popup-box-overlay" onclick="closeModalOnOverlay(event)">
+        <div class="popup-box-inner-content">
+            <span class="popup-box-close-x" onclick="closeModal('applyModal')">&times;</span>
+            <h2 class="popup-box-main-title">Apply for GymSober Feature</h2>
+            <ul class="popup-box-list-rules">
+                <li>Make sure your Instagram profile is public.</li>
+                <li>Keep your best 2-3 fitness videos ready.</li>
+            </ul>
+            <a href="https://instagram.com" target="_blank" class="popup-box-action-button">CLICK HERE TO DM US ON INSTAGRAM</a>
+        </div>
+    </div>
+
+    <!-- 2. Terms & Conditions Popup -->
+    <div id="termsModal" class="popup-box-overlay" onclick="closeModalOnOverlay(event)">
+        <div class="popup-box-inner-content">
+            <span class="popup-box-close-x" onclick="closeModal('termsModal')">&times;</span>
+            <h2 class="popup-box-main-title">Terms & Conditions</h2>
+            <div class="legal-scroll-text">
+                <p>Welcome to GymSober! These Terms & Conditions govern your use of our website and fitness promotion services.</p>
+                <strong>• Acceptance of Terms:</strong>
+                <p>We want to ensure we are the perfect fit for your goals. If any of these terms do not align with your preferences, feel free to connect with our support team before moving forward.</p>
+                <strong>• Promotion Services:</strong>
+                <p>While our network has an incredible reach, real growth depends heavily on the unique quality and appeal of your content. For this reason, we focus on maximizing your organic exposure rather than promising fixed follower or engagement numbers.</p>
+                <strong>• Account & Content Safety:</strong>
+                <p>You retain ownership of the fitness content you submit to us. However, by requesting a feature, you grant GymSober the right to share and showcase your content across our networks and parent channels.</p>
+                <strong>• Modifications:</strong>
+                <p>We reserve the right to change or update these terms at any time without prior notice. Continued use of our network implies acceptance of the new terms.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Privacy Policy Popup -->
+    <div id="privacyModal" class="popup-box-overlay" onclick="closeModalOnOverlay(event)">
+        <div class="popup-box-inner-content">
+            <span class="popup-box-close-x" onclick="closeModal('privacyModal')">&times;</span>
+            <h2 class="popup-box-main-title">Privacy Policy</h2>
+            <div class="legal-scroll-text">
+                <p>At GymSober, we respect your privacy and are committed to protecting any personal data you share with us.</p>
+                <strong>• Information We Collect:</strong>
+                <p>We may collect basic information when you apply for a feature, such as your name, Instagram handle, and email address.</p>
+                <strong>• How We Use Your Information:</strong>
+                <p>Your data is used strictly to process your feature application, handle support queries, and communicate about your promotional campaign.</p>
+                <strong>• Data Protection:</strong>
+                <p>We implement secure data practices to ensure your information is safe. We never sell, trade, or share your personal data with third-party advertising companies.</p>
+                <strong>• Cookies:</strong>
+                <p>Our website may use standard cookies to improve your user experience and analyze website traffic.</p>
+            </div>
+        </div>
+    </div>
+    <!-- 4. Refund Policy Popup -->
+    <div id="refundModal" class="popup-box-overlay" onclick="closeModalOnOverlay(event)">
+        <div class="popup-box-inner-content">
+            <span class="popup-box-close-x" onclick="closeModal('refundModal')">&times;</span>
+            <h2 class="popup-box-main-title">Refund Policy</h2>
+            <div class="legal-scroll-text">
+                <p>Thank you for choosing GymSober for your fitness journey promotion.</p>
+                <strong>• Strict Non-Refundable Policy:</strong>
+                <p>Please note that all payments made for our feature spots, shoutouts, or digital promotion services are 100% non-refundable.</p>
+                <strong>• Why it is Non-Refundable:</strong>
+                <p>Once a promotional campaign or slot is booked and processed, our team immediately allocates network resources to queue your feature. For this reason, we cannot offer refunds, credits, or exchanges under any circumstances. By completing your purchase, you acknowledge and agree to this policy.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Contact Us Popup -->
+    <div id="contactModal" class="popup-box-overlay" onclick="closeModalOnOverlay(event)">
+        <div class="popup-box-inner-content">
+            <span class="popup-box-close-x" onclick="closeModal('contactModal')">&times;</span>
+            <h2 class="popup-box-main-title">Contact Us</h2>
+            <div class="legal-scroll-text">
+                <p>Have questions about your promotion or want to collaborate? Get in touch with our team.</p>
+                <strong>• Customer Support Email:</strong>
+                <p>For any queries, feature bookings, or technical support, please email us directly at: <a href="mailto:supportgymsober@gmail.com" style="color: #ff8c00; text-decoration: none; font-weight: bold;">supportgymsober@gmail.com</a></p>
+                <strong>• Response Time:</strong>
+                <p>Our team usually responds within 24–48 hours.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT CONTROLLERS ==================== -->
+    <script>
+        function toggleMobileMenu() {
+            var menu = document.getElementById('main-navigation-menu');
+            var toggleBtn = document.getElementById('menuToggleBtn');
+            if (menu && toggleBtn) {
+                menu.classList.toggle('active');
+                toggleBtn.classList.toggle('open');
+            }
+        }
+        function openModal(modalId) {
+            var menu = document.getElementById('main-navigation-menu');
+            var toggleBtn = document.getElementById('menuToggleBtn');
+            if (menu && menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                if (toggleBtn) toggleBtn.classList.remove('open');
+            }
+            var targetModal = document.getElementById(modalId);
+            if (targetModal) {
+                targetModal.classList.add('active');
+            }
+        }
+        function closeModal(modalId) {
+            var targetModal = document.getElementById(modalId);
+            if (targetModal) {
+                targetModal.classList.remove('active');
+            }
+        }
+        function closeModalOnOverlay(event) {
+            if (event.target.classList.contains('popup-box-overlay')) {
+                event.target.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>

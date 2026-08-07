@@ -1,0 +1,381 @@
+/* ==================== GLOBAL STYLES & RESET ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #0b0f19;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+.full-page {
+    padding: 100px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ==================== NAVIGATION NAVBAR ==================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #121824;
+    border-bottom: 1px solid #1f293d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.main-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff8c00;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Hamburger Icon CSS */
+.hamburger-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1100;
+    padding: 5px;
+}
+.bar-line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Slide-out Sidebar Drawer Menu */
+#main-navigation-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #121824;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    transition: right 0.4s ease;
+    z-index: 1050;
+    padding: 90px 30px 30px 30px;
+}
+#main-navigation-menu.active {
+    right: 0;
+}
+#main-navigation-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#main-navigation-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #1f293d;
+    transition: color 0.3s;
+}
+#main-navigation-menu a:hover {
+    color: #ff8c00;
+}
+
+/* Hamburger Active Animations */
+.hamburger-menu-toggle.open .bar-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger-menu-toggle.open .bar-line:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu-toggle.open .bar-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ==================== PAGE 1: HERO SECTION ==================== */
+.hero-section {
+    text-align: center;
+}
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero-content h1 {
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.hero-text {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.apply-feature-main-btn {
+    background: linear-gradient(45deg, #ff8c00, #e52d27);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+    transition: transform 0.2s;
+    text-transform: uppercase;
+}
+.apply-feature-main-btn:hover {
+    transform: translateY(-2px);
+}
+.screenshot-container {
+    margin-top: 45px;
+    width: 100%;
+    max-width: 700px;
+}
+.ss-flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.dual-screenshot {
+    width: 45%;
+    min-width: 250px;
+    border-radius: 12px;
+    border: 1px solid #1f293d;
+}
+.parent-tag {
+    margin-top: 15px;
+    font-style: italic;
+    color: #888888;
+    font-size: 14px;
+}
+
+/* ==================== PAGE 2: TESTIMONIALS ==================== */
+.testimonial-section h2 {
+    font-size: 32px;
+    color: #ff8c00;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.section-subtext {
+    color: #888888;
+    margin-bottom: 35px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+@media (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+.video-card {
+    background-color: #121824;
+    border: 1px solid #1f293d;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 9/16;
+    width: 100%;
+}
+.video-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==================== PAGE 4: COUNTER STATS ==================== */
+.stats-section {
+    text-align: center;
+}
+.stats-content {
+    background-color: #121824;
+    border: 1px solid #1f293d;
+    border-radius: 20px;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.insta-logo-box {
+    font-size: 45px;
+    color: #e1306c;
+    margin-bottom: 15px;
+}
+.counter-number {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.stats-content h3 {
+    font-size: 14px;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.divider {
+    height: 2px;
+    width: 50px;
+    background-color: #ff8c00;
+    margin: 0 auto 25px auto;
+}
+.instagram-dm-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff8c00, #e52d27);
+    color: white;
+    text-decoration: none;
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 280px;
+    transition: transform 0.2s;
+}
+.instagram-dm-btn:hover {
+    transform: translateY(-2px);
+}
+.footer-note {
+    color: #ff9900;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* ==================== WINDOW POPUPS LAYOUT (MODALS) ==================== */
+.popup-box-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}
+.popup-box-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.popup-box-inner-content {
+    background-color: #121824;
+    border: 1px solid #1f293d;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+.popup-box-overlay.active .popup-box-inner-content {
+    transform: scale(1);
+}
+.popup-box-close-x {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #aaaaaa;
+    font-size: 30px;
+    cursor: pointer;
+}
+.popup-box-close-x:hover {
+    color: #ffffff;
+}
+.popup-box-main-title {
+    color: #ff8c00;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #1f293d;
+    padding-bottom: 10px;
+}
+.popup-box-list-rules {
+    list-style: none;
+    margin: 20px 0;
+}
+.popup-box-list-rules li {
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.5;
+    text-align: left;
+}
+.popup-box-list-rules li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ff8c00;
+    font-weight: bold;
+}
+.popup-box-action-button {
+    display: block;
+    text-align: center;
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Scroll Box Area for Policy Texts */
+.legal-scroll-text {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 8px;
+    text-align: left;
+}
+.legal-scroll-text p {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.legal-scroll-text strong {
+    color: #ff8c00;
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+}
