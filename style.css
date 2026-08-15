@@ -379,3 +379,311 @@ body {
     margin-top: 15px;
     font-size: 15px;
 }
+/* Dono photos ko ek sath daaye-baaye set karne ke liye */
+.ss-flex {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dual-screenshot {
+    width: 45%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+}
+
+.parent-tag {
+    text-align: center;
+    margin-top: 15px;
+    width: 100%;
+}
+/* 1. Instagram photos aur Testimonials ke beech ka gap kam karne ke liye */
+.screenshot-container {
+    margin-bottom: 15px !important;
+    padding-bottom: 0px !important;
+}
+#page2 {
+    margin-top: 15px !important;
+    padding-top: 15px !important;
+}
+
+/* 2. Testimonial videos aur Orange text ke beech ka gap kam karne ke liye */
+.video-grid {
+    margin-bottom: 15px !important;
+    padding-bottom: 0px !important;
+}
+#page2 h3 {
+    margin-top: 15px !important;
+    padding-top: 0px !important;
+}
+
+/* 3. Sabse neeche wale quote aur counters ke beech ka gap kam karne ke liye */
+.full-page.testimonial-section blockquote, 
+.testimonial-section p {
+    margin-bottom: 10px !important;
+    padding-bottom: 0px !important;
+}
+.full-page.testimonial-section {
+    padding-bottom: 15px !important;
+}
+/* =======================================================
+   1. MAIN INSTAGRAM WHITE & PINK GRADIENT BACKGROUND 
+   ======================================================= */
+body, .full-page, #page1, #page2, #page3, section {
+    background: linear-gradient(135deg, #ffffff 40%, #fff0f5 70%, #ffe4e1 100%) !important;
+    color: #1a1a1a !important;
+}
+
+/* =======================================================
+   2. LOGO KO INSTAGRAM STORY STYLE (ROUND & PINK BORDER)
+   ======================================================= */
+nav img, .logo img, [class*="logo"] img {
+    border-radius: 50% !important;
+    padding: 2px !important;
+    background: linear-gradient(45deg, #fccc63, #fbad50, #cd486b, #4c5fd7) !important;
+    object-fit: cover !important;
+}
+
+/* =======================================================
+   3. HAMBURGER MENU LINES KO 100% BLACK KARNE KE LIYE
+   ======================================================= */
+.menu-icon, .burger-menu, .icon-bar, .line, .bar,
+.menu-icon *, .burger-menu *, [class*="menu"] *, [class*="burger"] * {
+    background-color: #000000 !important;
+    color: #000000 !important;
+    border-color: #000000 !important;
+    fill: #000000 !important;
+}
+
+/* =======================================================
+   4. GENERAL TEXT & NAV BAR LOOK (Safed Par Kala Text)
+   ======================================================= */
+h1, h2, h3, h4, h5, h6, p, li, blockquote, span {
+    color: #1a1a1a !important;
+}
+nav, .navbar, [class*="nav"] {
+    background: transparent !important;
+    border: none !important;
+}
+nav *, .navbar *, [class*="nav"] *, .logo-text, nav h1 {
+    color: #1a1a1a !important;
+}
+.orange-text, #page2 h3, h2, #applyModal h2 {
+    color: #e1306c !important;
+}
+
+/* =======================================================
+   5. POPUP BOX (MODAL) FIX
+   ======================================================= */
+.modal-content, #applyModal div, [class*="modal"] {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+.modal-content *, #applyModal * {
+    color: #1a1a1a !important;
+}
+
+/* =======================================================
+   6. 2.5M COUNTER SECTON LOOK (SUPER STRICT WHITE FIX)
+   ======================================================= */
+.testimonial-section .counter-card, 
+.counter-box, 
+[class*="counter"], 
+[class*="card"],
+#page3 div {
+    background-color: #1a1a1a !important;
+}
+
+html body #page3 div h2,
+html body #page3 div p,
+html body #page3 div span,
+html body .testimonial-section h2,
+html body .testimonial-section p,
+html body .counter-card h2,
+html body .counter-card p,
+html body div[style*="background"] h2,
+html body div[style*="background"] p {
+    color: #ffffff !important;
+    color: white !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.apply-feature-main-btn, button, .btn {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+/* =======================================================
+   7. FINAL PERFECT HAMBURGER BLACK THEME (ONE-CLICK FIX) 🛠️
+   ======================================================= */
+/* यह सिर्फ खुले हुए मोबाइल मेनू को फुल स्क्रीन जेट-ब्लैक बैकग्राउंड देगा */
+div.nav-menu.open, div.mobile-menu.open, div.dropdown.open, 
+div.nav-links.open, div.nav-links.active, div.nav-menu.active, 
+ul.nav-menu.open, ul.nav-links.open,
+[class*="menu-container"].open, [class*="menu-box"].open {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: #111111 !important; /* सॉलिड जेट ब्लैक */
+    background: #111111 !important;
+    z-index: 99999 !important; /* सबसे ऊपर की लेयर */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 35px !important; /* लिंक्स के बीच बेहतर दूरी */
+    padding: 40px 20px !important;
+    box-sizing: border-box !important;
+}
+
+/* ब्लैक बैकग्राउंड के अंदर के सारे लिंक्स को चमकीला सफेद (White) करने के लिए */
+div.nav-menu.open a, div.mobile-menu.open a, div.dropdown.open a, 
+div.nav-links.open a, div.nav-links.active a, div.nav-menu.active a, 
+ul.nav-menu.open a, ul.nav-links.open a,
+[class*="menu-container"].open a, [class*="menu-box"].open a {
+    color: #ffffff !important; /* प्योर वाइट टेक्स्ट */
+    -webkit-text-fill-color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: 26px !important; /* मोबाइल के लिए बेस्ट साइज */
+    text-shadow: none !important;
+    text-decoration: none !important;
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+/* ऊपर कोने में क्लोज बटन (X) को सफेद करने के लिए ताकि वह साफ दिखे */
+div.nav-menu.open .close-menu, 
+div.mobile-menu.open [class*="close"], 
+[class*="menu"].open x, 
+[class*="menu"].open svg,
+[class*="menu"].open .close {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    fill: #ffffff !important;
+}
+
+/* ब्लैक मेनू के अंदर लिंक पर उंगली ले जाने पर इंस्टाग्राम पिंक कलर */
+div.nav-menu.open a:hover, div.mobile-menu.open a:hover, ul.nav-menu.open a:hover {
+    color: #e1306c !important;
+    -webkit-text-fill-color: #e1306c !important;
+}
+/* ===== MOBILE MENU FIX ===== */
+@media (max-width: 768px) {
+
+  /* Menu panel */
+  header.navbar nav {
+    background: #fff !important;
+    z-index: 9999 !important;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+
+  /* Menu links */
+  header.navbar nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  header.navbar nav ul li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header.navbar nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 18px 0;
+    box-sizing: border-box;
+
+    color: #111 !important;
+    background: #fff !important;
+
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Hamburger / Cross button hamesha menu ke upar rahe */
+  .hamburger-menu-toggle {
+    position: relative !important;
+    z-index: 10001 !important;
+  }
+}
+/* ===== POLICY / TERMS MODALS FIX ===== */
+
+#termsModal,
+#privacyModal,
+#refundModal,
+#contactModal {
+  color: #ffffff !important;
+}
+
+#termsModal *,
+#privacyModal *,
+#refundModal *,
+#contactModal * {
+  color: #ffffff;
+}
+
+/* Modal heading */
+#termsModal h1,
+#termsModal h2,
+#privacyModal h1,
+#privacyModal h2,
+#refundModal h1,
+#refundModal h2,
+#contactModal h1,
+#contactModal h2 {
+  color: #ff2d72 !important;
+  font-weight: 700 !important;
+}
+
+/* Orange section headings */
+#termsModal h3,
+#termsModal strong,
+#privacyModal h3,
+#privacyModal strong,
+#refundModal h3,
+#refundModal strong,
+#contactModal h3,
+#contactModal strong {
+  color: #ff9500 !important;
+}
+
+/* Normal paragraph text */
+#termsModal p,
+#termsModal li,
+#termsModal span,
+#privacyModal p,
+#privacyModal li,
+#privacyModal span,
+#refundModal p,
+#refundModal li,
+#refundModal span,
+#contactModal p,
+#contactModal li,
+#contactModal span {
+  color: #ffffff !important;
+}
+
+/* Modal close button */
+#termsModal button,
+#privacyModal button,
+#refundModal button,
+#contactModal button {
+  color: #ff9500 !important;
+}
