@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymSober | Fitness Promotion Network</title>
-    <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,22 +42,26 @@
                 DM FOR FEATURE
             </button>
         </div>
-        <div class="screenshot-container" style="width: 100%; box-sizing: border-box; text-align: center; margin-bottom: 20px; padding: 0 10px;">
-    <div style="display: flex !important; flex-direction: row !important; justify-content: center !important; align-items: center !important; gap: 12px !important; width: 100% !important; flex-wrap: nowrap !important;">
-        <img src="sober-ss.png" alt="GymSober Page Insights" style="width: 135px !important; height: 230px !important; object-fit: cover !important; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
-        <img src="salute-ss.png" alt="GymSalute Page Insights" style="width: 135px !important; height: 230px !important; object-fit: cover !important; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
-    </div>
-    <p style="text-align: center; margin-top: 12px; color: #aaaaaa; font-size: 14px;">@gymsalute is our parent page</p>
-</div>
-    </section>
 
-<section id="page2" style="position: relative !important; display: block !important; width: 100% !important; margin-top: 10px !important; padding: 20px 20px 0 20px !important; box-sizing: border-box !important; clear: both !important; background: transparent !important;">
-  <div style="width: 100% !important; text-align: center !important; margin-bottom: 20px !important; display: block !important;">
-    <h2 style="font-size: 34px !important; color: #111111 !important; font-weight: 900 !important; margin: 0 0 12px 0 !important; display: block !important; text-transform: uppercase !important; letter-spacing: 1px !important;">Testimonials</h2>
-    <p style="font-size: 18px !important; color: #444444 !important; font-weight: 700 !important; margin: 0 !important; display: block !important; line-height: 1.4 !important;">Hear from the fitness creators who scaled with us</p>
-              </div>
-    <div class="video-grid">
-      <div class="video-card"><video src="video1.mp4" controls preload="metadata"></video></div>
+        <!-- INSTAGRAM HIGHLIGHTS BUTTON START -->
+        <div class="gs-highlights-wrapper">
+          <div class="gs-highlight-item" onclick="openGsStory(0)">
+            <div class="gs-highlight-ring">
+              <img src="cover1.png" alt="Client Growth">
+            </div>
+            <span class="gs-highlight-title">GROWTH</span>
+            <p class="gs-highlight-subtitle">Click here to check client growth</p>
+          </div>
+        </div>
+        <!-- INSTAGRAM HIGHLIGHTS BUTTON END -->
+    </section>
+    <section id="page2" style="position: relative !important; display: block !important; width: 100% !important; margin-top: 10px !important; padding: 20px 20px 0 20px !important; box-sizing: border-box !important; clear: both !important; background: transparent !important;">
+        <div style="width: 100% !important; text-align: center !important; margin-bottom: 20px !important; display: block !important;">
+            <h2 style="font-size: 34px !important; color: #111111 !important; font-weight: 900 !important; margin: 0 0 12px 0 !important; display: block !important; text-transform: uppercase !important; letter-spacing: 1px !important;">Testimonials</h2>
+            <p style="font-size: 18px !important; color: #444444 !important; font-weight: 700 !important; margin: 0 !important; display: block !important; line-height: 1.4 !important;">Hear from the fitness creators who scaled with us</p>
+        </div>
+        <div class="video-grid">
+            <div class="video-card"><video src="video1.mp4" controls preload="metadata"></video></div>
             <div class="video-card"><video src="video2.mp4" controls preload="metadata"></video></div>
             <div class="video-card"><video src="video3.mp4" controls preload="metadata"></video></div>
             <div class="video-card"><video src="video4.mp4" controls preload="metadata"></video></div>
@@ -66,31 +69,30 @@
             <div class="video-card"><video src="video6.mp4" controls preload="metadata"></video></div>
         </div>
     </section>
-<!-- Naya Engagement Section -->
-<div class="network-section" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 15px; padding: 15px; flex-wrap: wrap; width: 100%; box-sizing: border-box; margin-bottom: -40px;">
-    <div class="network-photo-box" style="flex: 1; min-width: 200px; max-width: 250px; text-align: center; margin: 0 auto;">
-        <img src="network.png" alt="Engagement Network Groups" class="network-img" style="width: 100% !important; max-width: 150px !important; height: 250px !important; object-fit: cover !important; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); display: block; margin: 0 auto;">
-    </div>
-    <div class="network-text-box" style="flex: 1; min-width: 200px; color: #ffffff; font-size: 16px; line-height: 1.5; text-align: left; padding: 0 10px;">
-        <p>These are our engagement group networks. We will share your profile with them as well.</p>
-    </div>
-</div>
-    <section id="page3" class="full-page quote-section">
-  <div class="quote-container" style="display: flex; flex-direction: column; gap: 20px; padding: 20px;">
-    
-    <p style="font-size: 22px; color: #ff9900; line-height: 1.4; margin: 0; max-width: 650px; align-self: center; text-align: center; font-weight: bold;">
-      We’ve been in this business since 2015, and we’ve promoted over 4,300 people across our pages.
-    </p>
 
-    <p style="font-size: 18px; color: #ffffff; line-height: 1.6; margin: 0; max-width: 650px; align-self: center; text-align: center;">
-      We always believe in building long-term relationships with our clients, so they keep coming back. I’m confident that once you see the results, you’ll likely work with us again.
-    </p>
-  </p>
+    <!-- Engagement Network Section (Text Cut Fixed) -->
+    <div class="network-section" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 15px; padding: 20px 15px 30px 15px; flex-wrap: wrap; width: 100%; box-sizing: border-box; margin-bottom: 0;">
+        <div class="network-photo-box" style="flex: 1; min-width: 160px; max-width: 220px; text-align: center; margin: 0 auto;">
+            <img src="network.png" alt="Engagement Network Groups" class="network-img" style="width: 100% !important; max-width: 150px !important; height: 250px !important; object-fit: cover !important; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); display: block; margin: 0 auto;">
+        </div>
+        <div class="network-text-box" style="flex: 1; min-width: 220px; color: #111111; font-size: 16px; font-weight: 600; line-height: 1.5; text-align: center; padding: 0 10px;">
+            <p style="margin: 0; color: #222222 !important;">We’ll share your profile across our engagement group networks to help boost interaction and connect you with an active fitness community.</p>
+        </div>
+    </div>
+
+    <!-- Quote Section (Extra White Gap Removed) -->
+    <section id="page3" class="quote-section" style="min-height: auto !important; height: auto !important; padding: 40px 20px !important; margin: 0 !important;">
+        <div class="quote-container" style="display: flex; flex-direction: column; gap: 18px; padding: 10px;">
+            <p style="font-size: 22px; color: #ff9900; line-height: 1.4; margin: 0; max-width: 650px; align-self: center; text-align: center; font-weight: bold;">
+                Additionally, we have a Telegram network of over 2M members, where we’ll share your content to expand its reach and exposure.
             </p>
-            <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 18px; color: #ffffff; line-height: 1.6; margin: 0; max-width: 650px; align-self: center; text-align: center;">
+                We always believe in building long-term relationships with our clients, so they keep coming back. I’m confident that once you see the results, you’ll likely work with us again.
+            </p>
+            <div style="text-align: center; margin-top: 10px;">
                 <div style="display: flex; align-items: stretch; justify-content: center; gap: 15px; max-width: 600px; margin: 0 auto;">
                     <div style="width: 4px; background: #ff9900; flex-shrink: 0;"></div>
-                    <p style="font-size: 20px; color: #ffffff; font-style: italic; line-height: 1.5; margin: 0; padding: 10px 0;">
+                    <p style="font-size: 20px; color: #ffffff; font-style: italic; line-height: 1.5; margin: 0; padding: 8px 0;">
                         "Turn your fitness content into success with our promotion."
                     </p>
                     <div style="width: 4px; background: #ff9900; flex-shrink: 0;"></div>
@@ -99,11 +101,12 @@
         </div>
     </section>
 
-    <section id="page4" class="full-page stats-section">
+    <!-- Stats Section (Compact Spacing) -->
+    <section id="page4" class="stats-section" style="min-height: auto !important; height: auto !important; padding: 40px 20px 60px 20px !important; margin: 0 !important;">
         <div class="stats-content">
             <div class="insta-logo-box"><i class="fab fa-instagram"></i></div>
             <div class="counter-number" style="color: #ffffff !important; -webkit-text-fill-color: #ffffff !important;">5M+</div>
-<h3 style="color: #ffffff !important; -webkit-text-fill-color: #ffffff !important;">Followers Network on Instagram</h3>
+            <h3 style="color: #ffffff !important; -webkit-text-fill-color: #ffffff !important;">Followers Network</h3>
             <div class="divider"></div>
             <a href="https://instagram.com" target="_blank" class="instagram-dm-btn">LET'S GROW TOGETHER</a>
             <p class="footer-note" style="margin-top: 20px;">We love to promote fitness content</p>
@@ -159,6 +162,7 @@
             </div>
         </div>
     </div>
+
     <!-- 4. Refund Policy Popup -->
     <div id="refundModal" class="popup-box-overlay" onclick="closeModalOnOverlay(event)">
         <div class="popup-box-inner-content">
@@ -223,5 +227,284 @@
             }
         }
     </script>
+    <!-- ==================== FULLSCREEN STORY POPUP ==================== -->
+    <div class="gs-story-modal" id="gsStoryModal">
+      <div class="gs-story-box">
+        <div class="gs-progress-bars" id="gsProgressBars"></div>
+        <div class="gs-story-header">
+          <div class="gs-story-header-info">
+            <img src="cover1.png" alt="Growth">
+            <span>Client Growth</span>
+          </div>
+          <button class="gs-close-btn" onclick="closeGsStory()">&times;</button>
+        </div>
+        
+        <img class="gs-story-image" id="gsStoryImage" src="" alt="Client Screenshot">
+        
+        <!-- Clickable Client Follow Tag -->
+        <a class="gs-client-mention" id="gsClientMention" href="#" target="_blank" rel="noopener noreferrer"></a>
+        
+        <!-- Left / Right Tap Areas -->
+        <div class="gs-tap-left" onclick="prevGsSlide()"></div>
+        <div class="gs-tap-right" onclick="nextGsSlide()"></div>
+      </div>
+    </div>
+
+    <!-- ==================== HIGHLIGHTS & STORY CSS ==================== -->
+    <style>
+      .gs-highlights-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 85px auto 0px auto;
+        padding: 0 15px;
+        text-align: center;
+      }
+
+      .gs-highlight-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        max-width: 300px;
+      }
+
+      .gs-highlight-ring {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(255, 87, 34, 0.35);
+        transition: transform 0.25s ease;
+        background: #fff;
+      }
+
+      .gs-highlight-ring:hover {
+        transform: scale(1.06);
+      }
+
+      .gs-highlight-ring img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+      }
+
+      .gs-highlight-title {
+        margin-top: 12px;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+        color: #222;
+      }
+
+      .gs-highlight-subtitle {
+        margin-top: 4px;
+        margin-bottom: 0;
+        font-size: 13px;
+        font-weight: 500;
+        color: #444;
+        line-height: 1.4;
+      }
+
+      .gs-story-modal {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.94);
+        z-index: 99999;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .gs-story-box {
+        position: relative;
+        width: 94%;
+        max-width: 390px;
+        height: 86vh;
+        max-height: 700px;
+        background: #000;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 35px rgba(0,0,0,0.7);
+      }
+
+      .gs-progress-bars {
+        position: absolute;
+        top: 12px; left: 10px; right: 10px;
+        display: flex;
+        gap: 4px;
+        z-index: 20;
+      }
+
+      .gs-progress-bg {
+        flex: 1;
+        height: 3px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+
+      .gs-progress-fill {
+        height: 100%;
+        width: 0%;
+        background: #fff;
+      }
+
+      .gs-story-header {
+        position: absolute;
+        top: 22px; left: 14px; right: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 20;
+        color: #fff;
+      }
+
+      .gs-story-header-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .gs-story-header-info img {
+        width: 32px !important;
+        height: 32px !important;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .gs-close-btn {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        line-height: 1;
+        padding: 0 5px;
+      }
+
+      .gs-story-image {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        background: #000;
+        pointer-events: none;
+      }
+
+      .gs-client-mention {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.96);
+        color: #111 !important;
+        padding: 9px 18px;
+        border-radius: 25px;
+        text-decoration: none !important;
+        font-weight: 700;
+        font-size: 13px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.45);
+        z-index: 999999;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .gs-tap-left, .gs-tap-right {
+        position: absolute;
+        top: 60px;
+        bottom: 95px;
+        z-index: 15;
+        cursor: pointer;
+      }
+      .gs-tap-left { left: 0; width: 35%; }
+      .gs-tap-right { right: 0; width: 65%; }
+    </style>
+    <!-- ==================== HIGHLIGHTS & STORY JAVASCRIPT ==================== -->
+    <script>
+      const gsStories = [
+        { image: "ss1.png", user: "whodatlucky", query: "?exln=Z285c3BvYzRqeml1", top: "55%", left: "26%" },
+        { image: "ss2.png", user: "simplyty5", query: "?xtok=MThpOW9lOXpnbHliaw==", top: "82%", left: "50%" },
+        { image: "ss3.png", user: "adam_gbr_413", query: "?srtk=MTdqeDg2Znh6cnJocQ==", top: "82%", left: "50%" },
+        { image: "ss4.png", user: "hurcbrinson89", query: "?exln=MWJkcjl4MWhxcGYyZw==", top: "82%", left: "50%" },
+        { image: "ss5.png", user: "authenticateyourself", query: "?rpxt=MWJ4eDE5cjIyMWQ5aA==", top: "82%", left: "50%" },
+        { image: "ss6.png", user: "alexaaronlab", query: "?rpxt=MWM5NzljcHRtYW9nMw==", top: "82%", left: "50%" },
+        { image: "ss7.png", user: "chesney.peter", query: "?rpxt=d3BhcmJxOWdtNnVq", top: "82%", left: "50%" },
+        { image: "ss8.png", user: "supersaiyannoel", query: "?obrf=d2xka3J5ZWtsaWtq", top: "82%", left: "50%" }
+      ];
+
+      let gsCurrent = 0;
+      let gsTimer;
+      const gsDuration = 5000;
+
+      function openGsStory(index) {
+        gsCurrent = index;
+        document.getElementById('gsStoryModal').style.display = 'flex';
+        renderGsStory();
+      }
+
+      function closeGsStory() {
+        document.getElementById('gsStoryModal').style.display = 'none';
+        clearTimeout(gsTimer);
+      }
+
+      function renderGsStory() {
+        clearTimeout(gsTimer);
+        const item = gsStories[gsCurrent];
+        document.getElementById('gsStoryImage').src = item.image;
+
+        const btn = document.getElementById('gsClientMention');
+                const fullUrl = "https://instagram.com/" + item.user + item.query;
+        btn.innerText = "://instagram.com/" + item.user + " ↗";
+        btn.href = fullUrl;
+        btn.style.top = item.top || "82%";
+        btn.style.left = item.left || "50%";
+
+        btn.ontouchstart = function(e) { e.stopPropagation(); };
+        btn.onclick = function(e) { e.stopPropagation(); };
+
+        const bars = document.getElementById('gsProgressBars');
+        bars.innerHTML = '';
+        gsStories.forEach((_, idx) => {
+          const bg = document.createElement('div');
+          bg.className = 'gs-progress-bg';
+          const fill = document.createElement('div');
+          fill.className = 'gs-progress-fill';
+
+          if (idx < gsCurrent) {
+            fill.style.width = '100%';
+          } else if (idx === gsCurrent) {
+            fill.style.width = '0%';
+            setTimeout(() => {
+              fill.style.transition = `width ${gsDuration}ms linear`;
+              fill.style.width = '100%';
+            }, 50);
+          }
+          bg.appendChild(fill);
+          bars.appendChild(bg);
+        });
+
+        gsTimer = setTimeout(nextGsSlide, gsDuration);
+      }
+
+      function nextGsSlide() {
+        if (gsCurrent < gsStories.length - 1) {
+          gsCurrent++;
+          renderGsStory();
+        } else {
+          closeGsStory();
+        }
+      }
+
+      function prevGsSlide() {
+        if (gsCurrent > 0) {
+          gsCurrent--;
+          renderGsStory();
+        }
+      }
+    </script>
+
 </body>
 </html>
