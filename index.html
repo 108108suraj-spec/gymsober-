@@ -228,7 +228,7 @@
             }
         }
     </script>
-    <!-- ==================== FULLSCREEN STORY POPUP ==================== -->
+     <!-- ==================== FULLSCREEN STORY POPUP ==================== -->
     <div class="gs-story-modal" id="gsStoryModal">
       <div class="gs-story-box">
         <div class="gs-top-shadow"></div>
@@ -452,15 +452,63 @@
     <!-- ==================== HIGHLIGHTS & STORY JAVASCRIPT ==================== -->
     <script>
       const gsStories = [
-        { image: "ss1.png", user: "whodatlucky", top: "55%", left: "26%" },
-        { image: "ss2.png", user: "simplyty5", top: "86%", left: "50%" },
-        { image: "ss3.png", user: "adam_gbr_413", top: "86%", left: "50%" },
-        { image: "ss4.png", user: "hurcbrinson89", top: "86%", left: "50%" },
-        { image: "ss5.png", user: "authenticateyourself", top: "86%", left: "50%" },
-        { image: "ss6.png", user: "alexaaronlab", top: "86%", left: "50%" },
-        { image: "ss7.png", user: "chesney.peter", top: "86%", left: "50%" },
-        { image: "ss8.png", user: "supersaiyannoel", top: "86%", left: "50%" }
-      ];
+  { 
+    image: "ss1.png", 
+    user: "whodatlucky", 
+    url: "https://www.instagram.com/whodatlucky/", 
+    top: "55%", 
+    left: "26%" 
+  },
+  { 
+    image: "ss2.png", 
+    user: "simplyty5", 
+    url: "https://www.instagram.com/simplyty5/", 
+    top: "86%", 
+    left: "50%" 
+  },
+  { 
+    image: "ss3.png", 
+    user: "adam_gbr_413", 
+    url: "https://www.instagram.com/adam_gbr_413/", 
+    top: "86%", 
+    left: "50%" 
+  },
+  { 
+    image: "ss4.png", 
+    user: "hurcbrinson89", 
+    url: "https://www.instagram.com/hurcbrinson89/", 
+    top: "86%", 
+    left: "50%" 
+  },
+  { 
+    image: "ss5.png", 
+    user: "authenticateyourself", 
+    url: "https://www.instagram.com/authenticateyourself/", 
+    top: "86%", 
+    left: "50%" 
+  },
+  { 
+    image: "ss6.png", 
+    user: "alexaaronlab", 
+    url: "https://www.instagram.com/alexaaronlab/", 
+    top: "86%", 
+    left: "50%" 
+  },
+  { 
+    image: "ss7.png", 
+    user: "chesney.peter", 
+    url: "https://www.instagram.com/chesney.peter/", 
+    top: "86%", 
+    left: "50%" 
+  },
+  { 
+    image: "ss8.png", 
+    user: "supersaiyannoel", 
+    url: "https://www.instagram.com/supersaiyannoel/", 
+    top: "86%", 
+    left: "50%" 
+  }
+];
 
       let gsCurrent = 0;
       let gsTimer;
@@ -483,21 +531,17 @@
         document.getElementById('gsStoryImage').src = item.image;
 
         const btn = document.getElementById('gsClientMention');
-        const fullUrl = "https://instagram.com" + item.user + "/";
-        btn.innerText = "://instagram.com" + item.user + " ↗";
-        btn.href = fullUrl;
-        btn.style.top = item.top || "86%";
-        btn.style.left = item.left || "50%";
 
-        btn.ontouchstart = function(e) {
-          e.stopPropagation();
-        };
+btn.innerText = "@" + item.user + " ↗";
+btn.href = item.url;
+btn.target = "_blank";
+btn.rel = "noopener noreferrer";
 
-        btn.onclick = function(e) {
-          e.stopPropagation();
-          e.preventDefault();
-          window.open(fullUrl, '_blank');
-        };
+btn.style.top = item.top || "86%";
+btn.style.left = item.left || "50%";
+
+btn.onclick = null;
+btn.ontouchstart = null;
 
         const bars = document.getElementById('gsProgressBars');
         bars.innerHTML = '';
@@ -541,4 +585,3 @@
 
 </body>
 </html>
-
