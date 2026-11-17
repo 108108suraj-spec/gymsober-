@@ -55,6 +55,7 @@
         </div>
         <!-- INSTAGRAM HIGHLIGHTS BUTTON END -->
     </section>
+
     <section id="page2" style="position: relative !important; display: block !important; width: 100% !important; margin-top: 10px !important; padding: 20px 20px 0 20px !important; box-sizing: border-box !important; clear: both !important; background: transparent !important;">
         <div style="width: 100% !important; text-align: center !important; margin-bottom: 20px !important; display: block !important;">
             <h2 style="font-size: 34px !important; color: #111111 !important; font-weight: 900 !important; margin: 0 0 12px 0 !important; display: block !important; text-transform: uppercase !important; letter-spacing: 1px !important;">Testimonials</h2>
@@ -100,7 +101,6 @@
             </div>
         </div>
     </section>
-
     <!-- Stats Section (Compact Spacing) -->
     <section id="page4" class="stats-section" style="min-height: auto !important; height: auto !important; padding: 40px 20px 60px 20px !important; margin: 0 !important;">
         <div class="stats-content">
@@ -112,6 +112,7 @@
             <p class="footer-note" style="margin-top: 20px;">We love to promote fitness content</p>
         </div>
     </section>
+
     <!-- 1. Apply For Feature Popup -->
     <div id="applyModal" class="popup-box-overlay" onclick="closeModalOnOverlay(event)">
         <div class="popup-box-inner-content">
@@ -192,6 +193,7 @@
             </div>
         </div>
     </div>
+
     <!-- ==================== JAVASCRIPT CONTROLLERS ==================== -->
     <script>
         function toggleMobileMenu() {
@@ -226,11 +228,9 @@
             }
         }
     </script>
-
     <!-- ==================== FULLSCREEN STORY POPUP ==================== -->
     <div class="gs-story-modal" id="gsStoryModal">
       <div class="gs-story-box">
-        <!-- Upar ka dark gradient overlay taaki white slide lines aur cross button saaf dikhein -->
         <div class="gs-top-shadow"></div>
         
         <div class="gs-progress-bars" id="gsProgressBars"></div>
@@ -252,6 +252,7 @@
         <div class="gs-tap-right" onclick="nextGsSlide()"></div>
       </div>
     </div>
+
     <!-- ==================== HIGHLIGHTS & STORY CSS ==================== -->
     <style>
       .gs-highlights-wrapper {
@@ -308,6 +309,7 @@
         color: #444;
         line-height: 1.4;
       }
+
       .gs-story-modal {
         display: none;
         position: fixed;
@@ -331,7 +333,6 @@
         box-shadow: 0 10px 35px rgba(0,0,0,0.7);
       }
 
-      /* Upar ka dark gradient shadow taaki white screenshot ke upar bhi slide lines aur cross dikhe */
       .gs-top-shadow {
         position: absolute;
         top: 0;
@@ -423,18 +424,18 @@
       .gs-client-mention {
         position: absolute;
         transform: translate(-50%, -50%);
-        background: rgba(255, 255, 255, 0.96);
-        color: #111 !important;
-        padding: 9px 18px;
-        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.94);
+        color: #111111 !important;
+        padding: 5px 12px;
+        border-radius: 16px;
         text-decoration: none !important;
         font-weight: 700;
-        font-size: 13px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.45);
-        z-index: 40;
+        font-size: 11px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.45);
+        z-index: 999 !important;
         white-space: nowrap;
         cursor: pointer;
-        transition: all 0.2s ease;
+        pointer-events: auto !important;
       }
 
       .gs-tap-left, .gs-tap-right {
@@ -447,17 +448,18 @@
       .gs-tap-left { left: 0; width: 35%; }
       .gs-tap-right { right: 0; width: 65%; }
     </style>
+
     <!-- ==================== HIGHLIGHTS & STORY JAVASCRIPT ==================== -->
     <script>
       const gsStories = [
-        { image: "ss1.png", user: "whodatlucky", query: "?exln=Z285c3BvYzRqeml1", top: "55%", left: "26%" },
-        { image: "ss2.png", user: "simplyty5", query: "?xtok=MThpOW9lOXpnbHliaw==", top: "82%", left: "50%" },
-        { image: "ss3.png", user: "adam_gbr_413", query: "?srtk=MTdqeDg2Znh6cnJocQ==", top: "82%", left: "50%" },
-        { image: "ss4.png", user: "hurcbrinson89", query: "?exln=MWJkcjl4MWhxcGYyZw==", top: "82%", left: "50%" },
-        { image: "ss5.png", user: "authenticateyourself", query: "?rpxt=MWJ4eDE5cjIyMWQ5aA==", top: "82%", left: "50%" },
-        { image: "ss6.png", user: "alexaaronlab", query: "?rpxt=MWM5NzljcHRtYW9nMw==", top: "82%", left: "50%" },
-        { image: "ss7.png", user: "chesney.peter", query: "?rpxt=d3BhcmJxOWdtNnVq", top: "82%", left: "50%" },
-        { image: "ss8.png", user: "supersaiyannoel", query: "?obrf=d2xka3J5ZWtsaWtq", top: "82%", left: "50%" }
+        { image: "ss1.png", user: "whodatlucky", top: "55%", left: "26%" },
+        { image: "ss2.png", user: "simplyty5", top: "86%", left: "50%" },
+        { image: "ss3.png", user: "adam_gbr_413", top: "86%", left: "50%" },
+        { image: "ss4.png", user: "hurcbrinson89", top: "86%", left: "50%" },
+        { image: "ss5.png", user: "authenticateyourself", top: "86%", left: "50%" },
+        { image: "ss6.png", user: "alexaaronlab", top: "86%", left: "50%" },
+        { image: "ss7.png", user: "chesney.peter", top: "86%", left: "50%" },
+        { image: "ss8.png", user: "supersaiyannoel", top: "86%", left: "50%" }
       ];
 
       let gsCurrent = 0;
@@ -481,14 +483,21 @@
         document.getElementById('gsStoryImage').src = item.image;
 
         const btn = document.getElementById('gsClientMention');
-        const fullUrl = "https://instagram.com" + item.user + item.query;
-        btn.innerText = "://://instagram.com" + item.user + " ↗";
+        const fullUrl = "https://instagram.com" + item.user + "/";
+        btn.innerText = "://instagram.com" + item.user + " ↗";
         btn.href = fullUrl;
-        btn.style.top = item.top || "82%";
+        btn.style.top = item.top || "86%";
         btn.style.left = item.left || "50%";
 
-        btn.ontouchstart = function(e) { e.stopPropagation(); };
-        btn.onclick = function(e) { e.stopPropagation(); };
+        btn.ontouchstart = function(e) {
+          e.stopPropagation();
+        };
+
+        btn.onclick = function(e) {
+          e.stopPropagation();
+          e.preventDefault();
+          window.open(fullUrl, '_blank');
+        };
 
         const bars = document.getElementById('gsProgressBars');
         bars.innerHTML = '';
@@ -497,7 +506,6 @@
           bg.className = 'gs-progress-bg';
           const fill = document.createElement('div');
           fill.className = 'gs-progress-fill';
-
           if (idx < gsCurrent) {
             fill.style.width = '100%';
           } else if (idx === gsCurrent) {
@@ -533,3 +541,4 @@
 
 </body>
 </html>
+
